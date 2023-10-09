@@ -1676,11 +1676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1696,7 +1696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857107, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_Name
@@ -2978,11 +2978,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2994,11 +2994,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857107, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_Name
@@ -5619,13 +5619,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracks:
-  - {fileID: 1282523971}
-  - {fileID: 1282523977}
-  - {fileID: 1282523976}
-  - {fileID: 1282523975}
-  - {fileID: 1282523974}
-  - {fileID: 1282523980}
-  - {fileID: 1282523978}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currentSource: {fileID: 0}
   potionCompleteSound: {fileID: 1282523984}
   pickupSound: {fileID: 1282523983}

@@ -18,25 +18,25 @@ public class BackgroundMusic : MonoBehaviour
 
     public int trackHistory;
 
-    private void Start()
-    {
-        // Have a default track before anything else is calculated
-        currentSource = tracks[Random.Range(0, tracks.Length)];
-        currentSource.Play();
-    }
+    //private void Start()
+    //{
+    //    // Have a default track before anything else is calculated
+    //    currentSource = tracks[Random.Range(0, tracks.Length)];
+    //    currentSource.Play();
+    //}
 
-    private void Update()
-    {
-        if (currentSource.isPlaying == false)
-        {
-            while (trackSelector == trackHistory)
-            {
-                trackSelector = Random.Range(0, tracks.Length);
-            }
+    //private void Update()
+    //{
+    //    if (currentSource.isPlaying == false)
+    //    {
+    //        while (trackSelector == trackHistory)
+    //        {
+    //            trackSelector = Random.Range(0, tracks.Length);
+    //        }
 
-            PickTrack(trackSelector);
-        }
-    }
+    //        PickTrack(trackSelector);
+    //    }
+    //}
 
     private void PickTrack(int track)
     {
