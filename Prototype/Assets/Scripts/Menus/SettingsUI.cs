@@ -31,12 +31,26 @@ public class SettingsUI : MonoBehaviour
         musicObject = GameObject.FindWithTag("Music");
         music = GameObject.FindWithTag("Music").GetComponent<BackgroundMusic>();
         // Get the track that's currently playing
-        
+
+        //backgroundMusic.volume = settings.musicVolume;
+        //music.potionCompleteSound.volume = settings.soundFxVolume;
+        //music.pickupSound.volume = settings.soundFxVolume;
+        //music.buttonPressSound.volume = settings.soundFxVolume;
+        //music.dragCommenceSound.volume = settings.soundFxVolume;
+        //music.dropItemSound.volume = settings.soundFxVolume;
+        //music.openInventorySound.volume = settings.soundFxVolume;
+
+
         if (musicVolume)
-        {            
+        {
+            // Inherit the sound volume set by the Inspector
             musicVolume.floatValue = settings.musicVolume;
+            
+
+            // Listen out for any changes to the value of the slider bar in the Settings menu
             musicVolume.onValueChanged.AddListener((float value) =>
             {
+                // And when the slider bar value changes...
                 backgroundMusic = music.currentSource;
                 settings.musicVolume = value;
                 backgroundMusic.volume = value / 100;
@@ -45,15 +59,21 @@ public class SettingsUI : MonoBehaviour
 
         if (fxVolume)
         {
+            // Inherit the sound volume set by the Inspector
             fxVolume.floatValue = settings.soundFxVolume;
+            
+
+            // Listen out for any changes to the value of the slider bar in the Settings menu
             fxVolume.onValueChanged.AddListener((float value) =>
             {
+                // And when the slider bar value changes...
                 settings.soundFxVolume = value;
                 music.potionCompleteSound.volume = value / 100;
                 music.pickupSound.volume = value / 100;
                 music.buttonPressSound.volume = value / 100;
                 music.dragCommenceSound.volume = value / 100;
                 music.dropItemSound.volume = value / 100;
+                music.openInventorySound.volume = value / 100;
             });
         }
 

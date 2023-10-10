@@ -1,42 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BackgroundMusic : MonoBehaviour
 {
     public AudioSource[] tracks;
+    //public GameObject[] fxTracks;
+    //private AudioSource[] sfxTracks;
     public AudioSource currentSource;
     public AudioSource potionCompleteSound;
     public AudioSource pickupSound;
     public AudioSource buttonPressSound;
     public AudioSource dragCommenceSound;
     public AudioSource dropItemSound;
+    public AudioSource openInventorySound; // This sound is from ZapSplat.com
 
-    private AudioSource[] fxTracks;
 
     public int trackSelector;
 
     public int trackHistory;
 
-    //private void Start()
-    //{
-    //    // Have a default track before anything else is calculated
-    //    currentSource = tracks[Random.Range(0, tracks.Length)];
-    //    currentSource.Play();
-    //}
+    private void Start()
+    {
+        // Have a default track before anything else is calculated
+        currentSource = tracks[Random.Range(0, tracks.Length)];
+        currentSource.Play();        
+        //fxTracks = GameObject.FindGameObjectsWithTag("FXMusic");
+    }
 
-    //private void Update()
-    //{
-    //    if (currentSource.isPlaying == false)
-    //    {
-    //        while (trackSelector == trackHistory)
-    //        {
-    //            trackSelector = Random.Range(0, tracks.Length);
-    //        }
+    private void Update()
+    {
+        if (currentSource.isPlaying == false)
+        {
+            while (trackSelector == trackHistory)
+            {
+                trackSelector = Random.Range(0, tracks.Length);
+            }
 
-    //        PickTrack(trackSelector);
-    //    }
-    //}
+            PickTrack(trackSelector);
+        }
+    }
 
     private void PickTrack(int track)
     {

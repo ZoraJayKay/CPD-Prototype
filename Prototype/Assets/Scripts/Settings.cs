@@ -15,4 +15,8 @@ public class Settings : MonoBehaviour
     {
         stereoIsOn = checkbox;
     }
+
+    private void Start()
+    {
+    }
 }

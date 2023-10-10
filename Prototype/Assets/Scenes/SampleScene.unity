@@ -363,6 +363,37 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   m_IsOn: 1
+--- !u!1 &35570163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35570164}
+  m_Layer: 0
+  m_Name: BackgroundMusic01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &35570164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35570163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1282523972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81054521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,11 +1707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1692,11 +1723,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857107, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_Name
@@ -2345,7 +2376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e7a6c8407294745ab65e1ec08f232a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicVolume: 50
+  musicVolume: 25
   soundFxVolume: 50
   stereoIsOn: 0
 --- !u!1 &467188620
@@ -2978,11 +3009,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2994,11 +3025,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857106, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409685049431857107, guid: 9f71a2d7e78400b4698ee99fefe12ddc, type: 3}
       propertyPath: m_Name
@@ -5505,7 +5536,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ef12efdc39265e14bb180d3a23b611bf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c37731bf2150ce2419cbd89b219ff44b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5602,7 +5633,8 @@ Transform:
   m_LocalPosition: {x: 2.0673814, y: 0.82999885, z: 3.0269961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 35570164}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5619,19 +5651,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1282523971}
+  - {fileID: 1282523977}
+  - {fileID: 1282523976}
+  - {fileID: 1282523975}
+  - {fileID: 1282523974}
+  - {fileID: 1282523979}
+  - {fileID: 1282523978}
   currentSource: {fileID: 0}
   potionCompleteSound: {fileID: 1282523984}
   pickupSound: {fileID: 1282523983}
   buttonPressSound: {fileID: 1282523980}
   dragCommenceSound: {fileID: 1282523982}
   dropItemSound: {fileID: 1282523981}
+  openInventorySound: {fileID: 0}
   trackSelector: 0
   trackHistory: 0
 --- !u!82 &1282523974
@@ -5644,7 +5677,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ca61d7bdc25bf7948b1fc81f766dd22f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 38fb3940d9f63de41b7577409d768dea, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5740,7 +5773,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1035f4d1a9063c5418c65d86379c56fa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b38b0d2af935ef44d9c19108ecadb18e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5836,7 +5869,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 823fe7598a3b69c4a868b8d45f2cf28f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1f476432820faae45987bcec5861edee, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5932,7 +5965,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 298cbb9eaec16e04e9bfe6eea869020c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6774e079e0cfea646ba57d74ac025d43, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6028,7 +6061,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 031f657b2d065194ba3cd992105624d7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e227865b9495e1744af06958b941a6e9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6124,7 +6157,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f131403f57a868741a5cc99226a8803e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a35b63903e6b9534292922a5f0e78768, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7715,6 +7748,10 @@ PrefabInstance:
       propertyPath: settings
       value: 
       objectReference: {fileID: 463206810}
+    - target: {fileID: 8103843403727044776, guid: b7a63fb912f117a4e93a5d0c9074ca0a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8103843403727044776, guid: b7a63fb912f117a4e93a5d0c9074ca0a, type: 3}
       propertyPath: musicVolume
       value: 
