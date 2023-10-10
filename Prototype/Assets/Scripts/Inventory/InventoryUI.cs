@@ -19,8 +19,10 @@ public class InventoryUI : MonoBehaviour
     // 5: Variables for the components of this InventoryUI
     LayoutGroup layoutGroup;
     ContentSizeFitter contentSizeFitter;
-    
-    
+        
+    // Object for proximity sounds
+    private BackgroundMusic music;
+    private bool isOpen = false;
 
     // Initialise the InventoryUI
     private void Start()
@@ -36,6 +38,8 @@ public class InventoryUI : MonoBehaviour
         //inventory.onChanged.AddListener(() => { StartCoroutine(UpdateUI()); });
 
         StopCoroutine(UpdateUI());
+
+        music = GameObject.FindWithTag("Music").GetComponent<BackgroundMusic>();
     }
 
     // Update the InventoryUI, returning an iterator over the Inventory of this InventoryUI
@@ -84,4 +88,22 @@ public class InventoryUI : MonoBehaviour
     {
         return ref slots[i];
     }
+
+    // Yes I know this is a repeat of the functionality from the BackgroundMusic script, I'm just out of time to do this more cleverly
+    public void OpenOrCloseInventory()
+    {
+        if (isOpen == false)
+        {
+            music.openInventorySound.Play();
+            isOpen = true;
+        }
+
+        else
+        {
+            music.closeInventorySound.Play();
+            isOpen = false;
+        }
+    }
+
+
 }

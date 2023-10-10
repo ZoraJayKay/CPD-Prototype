@@ -15,6 +15,9 @@ public class BackgroundMusic : MonoBehaviour
     public AudioSource dragCommenceSound;
     public AudioSource dropItemSound;
     public AudioSource openInventorySound; // This sound is from ZapSplat.com
+    public AudioSource closeInventorySound; // This sound is from ZapSplat.com
+    public AudioSource potionGivenToVillagerSound; 
+    public AudioSource rejectionSound;
 
 
     public int trackSelector;
@@ -25,8 +28,7 @@ public class BackgroundMusic : MonoBehaviour
     {
         // Have a default track before anything else is calculated
         currentSource = tracks[Random.Range(0, tracks.Length)];
-        currentSource.Play();        
-        //fxTracks = GameObject.FindGameObjectsWithTag("FXMusic");
+        currentSource.Play();
     }
 
     private void Update()
@@ -44,42 +46,21 @@ public class BackgroundMusic : MonoBehaviour
 
     private void PickTrack(int track)
     {
-        switch (track)
+        tracks[track].Play();
+        tracks[track].volume = currentSource.volume;
+        currentSource = tracks[track];
+        trackHistory = track;
+    }
+
+    public void OpenOrCloseInventory(bool isOpening)
+    {
+        if (isOpening)
         {
-            case 0:
-            tracks[0].Play();
-            tracks[0].volume = currentSource.volume;
-            currentSource = tracks[0];
-            trackHistory = 0;
-            break;
-
-            case 1:
-            tracks[1].Play();
-            tracks[1].volume = currentSource.volume;
-            currentSource = tracks[1];
-            trackHistory = 1;
-            break;
-
-            case 2:
-            tracks[2].Play();
-            tracks[2].volume = currentSource.volume;
-            currentSource = tracks[2];
-            trackHistory = 2;
-            break;
-
-            case 3:
-            tracks[3].Play();
-            tracks[3].volume = currentSource.volume;
-            currentSource = tracks[3];
-            trackHistory = 3;
-            break;
-
-            case 4:
-            tracks[4].Play();
-            tracks[4].volume = currentSource.volume;
-            currentSource = tracks[4];
-            trackHistory = 4;
-            break;
+            openInventorySound.Play();
+        }
+        else
+        {
+            closeInventorySound.Play();
         }
     }
 }

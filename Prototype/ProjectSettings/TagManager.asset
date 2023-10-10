@@ -9,6 +9,7 @@ TagManager:
   - LaboratoryInventoryUI
   - GameManager
   - Music
+  - VillagerInventoryUI
   layers:
   - Default
   - TransparentFX

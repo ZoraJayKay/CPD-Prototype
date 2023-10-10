@@ -167,17 +167,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""148df252-314a-4119-9e63-d32763af2585"",
-                    ""path"": ""<Touchscreen>/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Walk"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
                     ""name"": ""Mouse"",
                     ""id"": ""94ce19c0-2508-4097-a4e7-4e9ce28b58eb"",
                     ""path"": ""OneModifier"",
